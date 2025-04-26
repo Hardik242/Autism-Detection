@@ -24,7 +24,7 @@ def resource_path(relative_path):
 
 
 for name in model_names:
-    with open(resource_path(f"models/{name}_model.pkl"), "rb") as f:
+    with open(resource_path(f"models\\{name}_model.pkl"), "rb") as f:
         models[name] = pickle.load(f)
 
 
