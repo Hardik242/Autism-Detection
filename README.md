@@ -16,8 +16,13 @@ Here are some screenshots of the application:
     <img src="Screenshots/Screenshot (5).png" alt="Screenshot 5" width="400"/>
 </div>
 
+## Ready to Run Executable
+
+For ease of use, this project includes a pre-built executable file (`autism_gui.exe`) located in the `Ready to run EXE` directory. You can directly run this executable on your Windows computer to utilize the application without needing to install Python or any dependencies. Simply navigate to the `Ready to run EXE` folder and double-click `autism_gui.exe` to launch the ASD prediction tool.
+
 ## Key Features
 
+-   **Ready to Run Executable:** A pre-built `.exe` file for immediate use on Windows.
 -   **Data Preprocessing:** Robust preprocessing in the notebook, including missing value imputation, feature encoding, and scaling.
 -   **Machine Learning Classification:** Training and evaluation of eight different machine learning classifiers within the `model_training.ipynb` notebook.
 -   **GUI Prediction:** A graphical user interface (`autism_gui.py`) allows users to input data and receive ASD predictions.
@@ -28,6 +33,9 @@ Here are some screenshots of the application:
 
 The project is organized as follows:
 
+.
+├── Ready to run EXE/ # Directory containing the pre-built executable.
+│ └── autism_gui.exe
 ├── autism_gui.py # Python script for the graphical user interface.
 ├── model_training.ipynb # Jupyter Notebook for model training and evaluation.
 ├── models/ # Directory containing trained model files (.pkl).
@@ -37,7 +45,12 @@ The project is organized as follows:
 ├── test_final.csv # Testing data.
 └── README.md # Documentation.
 
-1.  **Model Training (`model_training.ipynb`):**
+1.  **Ready to Run Application:**
+
+    -   Navigate to the `Ready to run EXE` directory.
+    -   Double-click the `autism_gui.exe` file to launch the application.
+
+2.  **Model Training (`model_training.ipynb`):**
 
     -   Loads training and testing data (`train_combined_final.csv`, `test_final.csv`).
     -   Performs data preprocessing using `scikit-learn` (encoding, scaling).
@@ -45,7 +58,7 @@ The project is organized as follows:
     -   Saves the trained models to the `models/` directory as `.pkl` files (e.g., `AB_model.pkl`, `RF_model.pkl`).
     -   Saves the `ColumnTransformer` (`preprocessor.pkl`) and the list of feature names (`template_columns.pkl`).
 
-2.  **GUI Application (`autism_gui.py`):**
+3.  **GUI Application (`autism_gui.py`):**
 
     -   Loads the trained models, preprocessor, and feature names.
     -   Creates a graphical interface using `tkinter` for user input.
@@ -55,18 +68,26 @@ The project is organized as follows:
 
 ## Requirements
 
--   Python 3.x
--   Jupyter Notebook
--   Libraries: (See `model_training.ipynb` and `autism_gui.py` for specific dependencies)
-    -   pandas
-    -   numpy
-    -   scikit-learn
-    -   matplotlib
-    -   tkinter
+-   For running the Python scripts and the notebook:
+    -   Python 3.x
+    -   Jupyter Notebook
+    -   Libraries: (See `model_training.ipynb` and `autism_gui.py` for specific dependencies)
+        -   pandas
+        -   numpy
+        -   scikit-learn
+        -   matplotlib
+        -   tkinter
+-   For running the pre-built executable:
+    -   A Windows operating system.
 
 ## Usage
 
-1.  **Model Training:**
+1.  **Running the Executable (Recommended):**
+
+    -   Navigate to the `Ready to run EXE` folder.
+    -   Double-click `autism_gui.exe`.
+
+2.  **Model Training:**
 
     -   Open the `model_training.ipynb` notebook using Jupyter Notebook.
 
@@ -76,9 +97,11 @@ The project is organized as follows:
 
     -   Execute the cells in the notebook sequentially to train the models and generate the necessary `.pkl` files.
 
-2.  **GUI Application:**
+3.  **Running the Python Script (if you have Python installed):**
 
-    -   Run the `autism_gui.py` script to launch the graphical interface.
+    -   Open your terminal or command prompt.
+    -   Navigate to the project directory.
+    -   Run the `autism_gui.py` script:
 
         ```bash
         python autism_gui.py
