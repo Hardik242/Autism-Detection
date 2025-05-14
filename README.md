@@ -124,7 +124,11 @@ Contributions to this project are welcome. Please follow these guidelines:
 
 -   The authors of the research paper "A Machine Learning Framework for Early-Stage Detection of Autism Spectrum Disorders" for providing the methodological foundation for this project.
 -   MIET college, Meerut
--   MD. Shahid Sir, MIET
+-   MD. Shahid Sir (College Professor), MIET
+-   Hardik Goel (BTech CSE Student)
+-   Manas Kush (BTech CSE Student)
+-   Harshita Narang (BTech CSE Student)
+-   Harsh Bhardwaj (BTech CSE Student)
 
 ## Citation
 
